@@ -70,7 +70,7 @@ export default async function HomePage() {
     }
   ];
 
-  const latestGuides = guides.slice(0, 3);
+  const latestGuides = JSON.parse(JSON.stringify(guides.slice(0, 3)));
 
   return (
     <div className="stitch-page">

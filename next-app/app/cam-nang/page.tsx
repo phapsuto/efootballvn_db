@@ -51,7 +51,7 @@ const UPDATE_FEED = [
 ] as const;
 
 export default async function GuideLibraryPage() {
-  const guides = await listGuides();
+  const guides = JSON.parse(JSON.stringify(await listGuides()));
 
   return (
     <div className="stitch-page">
