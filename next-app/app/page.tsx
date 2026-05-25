@@ -3,16 +3,17 @@ import { ArrowRight } from 'lucide-react';
 
 import { SiteHeader } from '@/components/layout/site-header';
 import { getSyncPipelineStatus } from '@/lib/sync/status';
-import { listLeagueTeams, listManagers, listPacks, listPlayers } from '@/lib/data/repository';
+import { listLeagueTeams, listManagers, listPacks, listPlayers, listGuides } from '@/lib/data/repository';
 import { getPackTiming } from '@/lib/packs/pack-timing';
 
 export default async function HomePage() {
-  const [playersResult, managersResult, packsResult, leagueResult, pipeline] = await Promise.all([
+  const [playersResult, managersResult, packsResult, leagueResult, pipeline, guides] = await Promise.all([
     listPlayers({ page: 1, limit: 4, minOvr: 90, sortBy: 'overall_desc' }),
     listManagers({ page: 1, limit: 4, sortBy: 'style_desc' }),
     listPacks({ page: 1, limit: 3 }),
     listLeagueTeams({ page: 1, limit: 3, sortBy: 'points_desc', mode: 'all' }),
-    getSyncPipelineStatus()
+    getSyncPipelineStatus(),
+    listGuides()
   ]);
 
   const syncFinishedAt = pipeline.sync.lastRun?.finishedAt || pipeline.scrape.lastSuccess?.finishedAt;
@@ -68,6 +69,8 @@ export default async function HomePage() {
       hint: 'Cập nhật múi giờ VN'
     }
   ];
+
+  const latestGuides = guides.slice(0, 3);
 
   return (
     <div className="stitch-page">
@@ -252,8 +255,63 @@ export default async function HomePage() {
           </article>
         </section>
 
+        {/* Latest Guides & Meta Updates */}
+        <section className="max-w-screen-2xl mx-auto px-6 pb-12 border-t border-white/5 pt-12">
+          <div className="mb-6 flex items-end justify-between">
+            <div>
+              <p className="stitch-label-accent">Học viện &amp; Chiến thuật</p>
+              <h2 className="stitch-section-title mt-2">Cẩm nang &amp; Phân tích Meta mới</h2>
+            </div>
+            <Link
+              href="/cam-nang"
+              className="text-xs font-bold uppercase tracking-wider text-primary hover:text-primary"
+            >
+              Mở học viện →
+            </Link>
+          </div>
+          <div className="grid gap-5 md:grid-cols-3">
+            {latestGuides.map((guide) => (
+              <Link
+                key={guide.id}
+                href="/cam-nang#thuat-ngu"
+                className="group flex flex-col justify-between p-6 bg-surface-container/60 hover:bg-surface-container-high/80 border border-white/5 rounded-2xl transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span
+                      className={`stitch-chip text-[10px] uppercase font-bold tracking-wider ${
+                        guide.category === 'Chỉ số & Thuật ngữ'
+                          ? 'stitch-chip-emerald'
+                          : guide.category === 'Lối chơi đồng đội'
+                          ? 'stitch-chip-amber'
+                          : 'stitch-chip-sky'
+                      }`}
+                    >
+                      {guide.category}
+                    </span>
+                    <span className="text-[10px] text-outline font-bold">
+                      {guide.createdAt ? new Date(guide.createdAt).toLocaleDateString('vi-VN') : 'Mới'}
+                    </span>
+                  </div>
+                  <h3 className="text-base font-black text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                    {guide.title}
+                  </h3>
+                  <p className="text-xs leading-5 text-on-surface-variant/80 line-clamp-3">
+                    {guide.summary}
+                  </p>
+                </div>
+                <div className="mt-5 pt-3 border-t border-white/5 flex items-center justify-between">
+                  <span className="text-xs font-bold uppercase tracking-wider text-primary group-hover:underline">
+                    Chi tiết cẩm nang →
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* Packs */}
-        <section className="max-w-screen-2xl mx-auto px-6 pb-16">
+        <section className="max-w-screen-2xl mx-auto px-6 pb-16 border-t border-white/5 pt-12">
           <div className="mb-6 flex items-end justify-between">
             <div>
               <p className="stitch-label-accent">Nhịp cập nhật</p>

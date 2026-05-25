@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { SiteHeader } from '@/components/layout/site-header';
 import { GuidesClient } from '@/components/guides/guides-client';
-import glossaryData from './glossary-data.json';
+import { listGuides } from '@/lib/data/repository';
 
 const GUIDE_CARDS = [
   {
@@ -50,7 +50,9 @@ const UPDATE_FEED = [
   { title: 'Mở chi tiết HLV để chốt playstyle phù hợp', category: 'HLV', href: '/hlv' }
 ] as const;
 
-export default function GuideLibraryPage() {
+export default async function GuideLibraryPage() {
+  const guides = await listGuides();
+
   return (
     <div className="stitch-page">
       <SiteHeader activeHref="/cam-nang" />
@@ -140,12 +142,12 @@ export default function GuideLibraryPage() {
         <section id="thuat-ngu" className="border-t border-white/5 pt-10">
           <div className="mb-6">
             <p className="stitch-label-accent">Học viện eFootball</p>
-            <h2 className="stitch-section-title mt-2">Cẩm nang Thuật ngữ & Kỹ thuật chơi đỉnh cao</h2>
+            <h2 className="stitch-section-title mt-2">Cẩm nang Thuật ngữ &amp; Kỹ thuật chơi đỉnh cao</h2>
             <p className="mt-2 text-sm text-on-surface-variant max-w-3xl">
               Tra cứu các chỉ số cốt lõi, cơ chế ẩn, phong độ và học cách thực hiện các kỹ thuật điều khiển nâng cao từ tay cầm cùng mẹo thực chiến của các game thủ eFootball chuyên nghiệp.
             </p>
           </div>
-          <GuidesClient initialGuides={glossaryData} />
+          <GuidesClient initialGuides={guides} />
         </section>
 
         <section className="border-t border-white/5 pt-10">

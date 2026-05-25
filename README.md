@@ -35,8 +35,16 @@ Tất cả các thông số chuyên sâu về cầu thủ được thiết lập
 * Pop-up hiển thị mượt mà trên cả máy tính và điện thoại.
 
 ### 6. Cẩm Nang Học Viện eFootball Cao Cấp (`/cam-nang`)
-* Bộ 8 cẩm nang chuyên sâu giải thích chi tiết các thuật ngữ cốt lõi và kỹ thuật điều khiển meta của game: bẫy chỉ số OVR, Trạng thái mũi tên phong độ (Player Form), cơ chế ổn định ẩn (Conditioning Consistency), cách tăng Progression Points thủ công (Manual Allocation), kỹ thuật sút lực mạnh (Stunning Shot), cướp bóng bằng L2/LT (Match-up Defense), **kỹ thuật tối thượng Super Cancel (R1+R2 / RB+RT)** và bứt tốc đẩy bóng Sharp Touch.
+* Bộ 13 cẩm nang chuyên sâu giải thích chi tiết các thuật ngữ cốt lõi và kỹ thuật điều khiển meta của game: bẫy chỉ số OVR, Trạng thái mũi tên phong độ (Player Form), cơ chế ổn định ẩn (Conditioning Consistency), cách tăng Progression Points thủ công (Manual Allocation), kỹ thuật sút lực mạnh (Stunning Shot), cướp bóng bằng L2/LT (Match-up Defense), **kỹ thuật tối thượng Super Cancel (R1+R2 / RB+RT)** và bứt tốc đẩy bóng Sharp Touch.
 * Tích hợp bộ lọc tab phân loại mượt mà và thanh **Tìm kiếm thời gian thực (Live Search)** hiển thị tức thì. Giao diện xem dạng **Glassmorphic Overlay Modal** hiện đại và lôi cuốn.
+
+### 7. Phân Tích Chuyên Sâu 5 Lối Chơi Đồng Đội (Team Playstyles)
+* Phân tích chuyên sâu meta-accurate về 5 phong cách chơi đồng đội: **Possession Game (Kiểm soát bóng)**, **Quick Counter (Phản công nhanh)**, **Long Ball Counter (Phản công bóng dài)**, **Out Wide (Tấn công biên)**, và **Long Ball (Bóng dài)**.
+* Từng lối chơi được minh họa bằng các **sơ đồ chiến thuật 2D độc quyền độ nét cao (high-fidelity tactical board)**, thể hiện cực kỳ chuẩn xác cự ly đội hình, các tam giác chuyền bóng, hướng di chuyển (bứt tốc, chồng biên overlapping) và cấu trúc hàng phòng ngự (High Line vs Low Block).
+
+### 8. Công Cụ Viết Cẩm Nang Admin Trực Tiếp (Admin Guide Writer)
+* Tích hợp bảng công cụ quản trị (Admin Mode Panel) an toàn, cho phép Admin trực tiếp biên soạn, chọn sơ đồ chiến thuật tương ứng và xuất bản các bài phân tích meta mới nhất lên hệ thống.
+* Các bài viết được lưu trữ lâu dài trên cơ sở dữ liệu **MongoDB** (tự động fallback sang file JSON hạt giống nếu không có kết nối DB) và cập nhật hiển thị ngay lập tức lên **Trang chủ (Homepage)** trong mục *"Cập nhật cẩm nang & Meta mới"* để cộng đồng dễ dàng nắm bắt xu thế.
 
 ---
 

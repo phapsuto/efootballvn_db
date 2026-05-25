@@ -2574,9 +2574,75 @@ export async function getDataSourceStatus(): Promise<DataSourceStatus> {
     return {
       connected: false,
       mode: 'mock',
-      database: db.databaseName,
+      database: db?.databaseName || 'unknown',
       collections: null,
       error: 'Không đọc được thống kê collection từ MongoDB.'
     };
+  }
+}
+
+const GUIDES_COLLECTION = 'guides';
+
+export type Guide = {
+  id: string;
+  category: string;
+  title: string;
+  summary: string;
+  content: string;
+  diagramUrl?: string;
+  createdAt?: string;
+};
+
+// Seed baseline data dynamically from glossary-data.json if MongoDB collection is empty
+import glossaryData from '../../app/cam-nang/glossary-data.json';
+
+export async function listGuides(): Promise<Guide[]> {
+  const collection = await getCollection(GUIDES_COLLECTION);
+  if (!collection) {
+    return glossaryData as Guide[];
+  }
+  try {
+    const docs = await collection.find({}).sort({ createdAt: -1, _id: -1 }).toArray();
+    if (docs.length === 0) {
+      const seeded = (glossaryData as Guide[]).map((item, idx) => ({
+        ...item,
+        // Make sure playstyles are categorized under 'Lối chơi đồng đội'
+        category: item.id.includes('playstyle') || item.id === 'team-playstyles-meta' ? 'Lối chơi đồng đội' : item.category,
+        createdAt: new Date(Date.now() - idx * 60000).toISOString()
+      }));
+      await collection.insertMany(seeded);
+      return seeded;
+    }
+    return docs.map(doc => ({
+      id: doc.id,
+      category: doc.category,
+      title: doc.title,
+      summary: doc.summary,
+      content: doc.content,
+      diagramUrl: doc.diagramUrl,
+      createdAt: doc.createdAt
+    }));
+  } catch (error) {
+    maybeLogMongoQueryError('listGuides', error);
+    return glossaryData as Guide[];
+  }
+}
+
+export async function createGuide(guide: Omit<Guide, 'id'>): Promise<Guide | null> {
+  const collection = await getCollection(GUIDES_COLLECTION);
+  if (!collection) {
+    return null;
+  }
+  try {
+    const newGuide: Guide = {
+      ...guide,
+      id: `guide-${Date.now()}`,
+      createdAt: new Date().toISOString()
+    };
+    await collection.insertOne(newGuide);
+    return newGuide;
+  } catch (error) {
+    maybeLogMongoQueryError('createGuide', error);
+    return null;
   }
 }
