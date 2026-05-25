@@ -26,6 +26,7 @@ type PlayerListOptions = {
   position?: string;
   cardType?: string;
   playstyle?: string;
+  skill?: string;
   nationality?: string;
   club?: string;
   foot?: string;
@@ -1186,6 +1187,13 @@ function buildPlayerMockResponse(options: PlayerListOptions) {
       }
     }
 
+    if (options.skill) {
+      const skill = normalize(options.skill);
+      if (!player.skills.some((item) => normalize(item) === skill)) {
+        return false;
+      }
+    }
+
     if (typeof options.minOvr === 'number' && Number.isFinite(options.minOvr)) {
       if (player.overall.max < options.minOvr) {
         return false;
@@ -1394,6 +1402,10 @@ export async function listPlayers(options: PlayerListOptions = {}) {
 
       if (options.playstyle?.trim()) {
         conditions.push({ playstyles: toCaseInsensitiveExactRegex(options.playstyle) });
+      }
+
+      if (options.skill?.trim()) {
+        conditions.push({ skills: toCaseInsensitiveExactRegex(options.skill) });
       }
 
       if (typeof options.minOvr === 'number' && Number.isFinite(options.minOvr)) {

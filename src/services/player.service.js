@@ -13,6 +13,7 @@ const parseListQuery = (query) => {
     position: query.position?.trim(),
     cardType: query.cardType?.trim(),
     playstyle: query.playstyle?.trim(),
+    skill: query.skill?.trim(),
     minOvr: Number.parseInt(query.minOvr, 10),
     sortBy: query.sortBy || 'overall.max',
     sortOrder: query.sortOrder === 'asc' ? 1 : -1
@@ -41,6 +42,10 @@ const buildPlayerFilter = (options) => {
 
   if (options.playstyle) {
     filter.playstyles = options.playstyle;
+  }
+
+  if (options.skill) {
+    filter.skills = options.skill;
   }
 
   if (!Number.isNaN(options.minOvr)) {
@@ -82,6 +87,16 @@ const filterMockPlayers = (players, options) =>
         (item) => String(item).toLowerCase() === options.playstyle.toLowerCase()
       );
       if (!hasPlaystyle) {
+        return false;
+      }
+    }
+
+    if (options.skill) {
+      const skills = Array.isArray(player.skills) ? player.skills : [];
+      const hasSkill = skills.some(
+        (item) => String(item).toLowerCase() === options.skill.toLowerCase()
+      );
+      if (!hasSkill) {
         return false;
       }
     }

@@ -49,6 +49,7 @@ type FetchParams = {
   position: string;
   cardType: string;
   playstyle: string;
+  skill: string;
   nationality: string;
   club: string;
   foot: string;
@@ -64,6 +65,7 @@ const DEFAULT_FETCH_PARAMS: FetchParams = {
   position: '',
   cardType: '',
   playstyle: '',
+  skill: '',
   nationality: '',
   club: '',
   foot: '',
@@ -107,6 +109,8 @@ function sanitizeInitialFilters(initialFilters?: Partial<FetchParams>): FetchPar
       typeof initialFilters?.cardType === 'string' ? initialFilters.cardType : DEFAULT_FETCH_PARAMS.cardType,
     playstyle:
       typeof initialFilters?.playstyle === 'string' ? initialFilters.playstyle : DEFAULT_FETCH_PARAMS.playstyle,
+    skill:
+      typeof initialFilters?.skill === 'string' ? initialFilters.skill : DEFAULT_FETCH_PARAMS.skill,
     nationality:
       typeof initialFilters?.nationality === 'string'
         ? initialFilters.nationality
@@ -132,6 +136,7 @@ function buildUrl(routeBase: string, params: FetchParams) {
   if (params.position) search.set('position', params.position);
   if (params.cardType) search.set('cardType', params.cardType);
   if (params.playstyle) search.set('playstyle', params.playstyle);
+  if (params.skill) search.set('skill', params.skill);
   if (params.nationality.trim()) search.set('nationality', params.nationality.trim());
   if (params.club.trim()) search.set('club', params.club.trim());
   if (params.foot) search.set('foot', params.foot);
@@ -167,6 +172,7 @@ export function PlayersListClient({
   const [position, setPosition] = useState(resolvedInitial.position);
   const [cardType, setCardType] = useState(resolvedInitial.cardType);
   const [playstyle, setPlaystyle] = useState(resolvedInitial.playstyle);
+  const [skill, setSkill] = useState(resolvedInitial.skill);
   const [nationality, setNationality] = useState(resolvedInitial.nationality);
   const [club, setClub] = useState(resolvedInitial.club);
   const [foot, setFoot] = useState(resolvedInitial.foot);
@@ -200,6 +206,7 @@ export function PlayersListClient({
       if (params.position) search.set('position', params.position);
       if (params.cardType) search.set('cardType', params.cardType);
       if (params.playstyle) search.set('playstyle', params.playstyle);
+      if (params.skill) search.set('skill', params.skill);
       if (params.nationality.trim()) search.set('nationality', params.nationality.trim());
       if (params.club.trim()) search.set('club', params.club.trim());
       if (params.foot) search.set('foot', params.foot);
@@ -226,6 +233,7 @@ export function PlayersListClient({
     setPosition(resolvedInitial.position);
     setCardType(resolvedInitial.cardType);
     setPlaystyle(resolvedInitial.playstyle);
+    setSkill(resolvedInitial.skill);
     setNationality(resolvedInitial.nationality);
     setClub(resolvedInitial.club);
     setFoot(resolvedInitial.foot);
@@ -251,6 +259,7 @@ export function PlayersListClient({
       position,
       cardType,
       playstyle,
+      skill,
       nationality,
       club,
       foot,
@@ -265,7 +274,7 @@ export function PlayersListClient({
 
   const resetFilters = () => {
     setQuery(''); setMinOvr(70); setPosition(''); setCardType(''); setPlaystyle('');
-    setNationality(''); setClub(''); setFoot(''); setMinHeight(''); setMaxHeight('');
+    setSkill(''); setNationality(''); setClub(''); setFoot(''); setMinHeight(''); setMaxHeight('');
     setSortBy('overall_desc'); setPage(1);
     syncRoute(DEFAULT_FETCH_PARAMS);
     void fetchPlayers(DEFAULT_FETCH_PARAMS);
@@ -281,6 +290,7 @@ export function PlayersListClient({
       position,
       cardType,
       playstyle,
+      skill,
       nationality,
       club,
       foot,

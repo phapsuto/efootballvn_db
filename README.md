@@ -29,6 +29,15 @@ Tất cả các thông số chuyên sâu về cầu thủ được thiết lập
 * Thiết lập sơ đồ chiến thuật tùy chọn (`4-3-3`, `4-2-3-1`, `4-4-2`, `3-4-3`, `3-5-2`, `5-2-1-2`).
 * Chọn huấn luyện viên (HLV) và tính toán chính xác chỉ số tổng quan (OVR), điểm gắn kết lối chơi (Tactical Boosts) dựa trên chỉ số kỹ năng của HLV.
 
+### 5. Từ Điển 73+ Tính Năng (Skills & Playstyles) Chuyên Sâu (`/tinh-nang`)
+* Tích hợp kho tri thức từ điển khổng lồ giải thích cặn kẽ 73+ kỹ năng cầu thủ (Double Touch, One-touch Pass, Blitz Curler,...) và phong cách chơi (Goal Poacher, Build Up, Anchor Man,...).
+* Mỗi mục tính năng được biên soạn công phu bằng **Gemini AI** dài 150-300 từ bao gồm: dịch nghĩa chuẩn tiếng Việt, phân tích cơ chế hoạt động ẩn trên sân, **nút bấm tay cầm PlayStation/Xbox chi tiết để kích hoạt** và mẹo chơi chuyên nghiệp (Pro Tips).
+* Pop-up hiển thị mượt mà trên cả máy tính và điện thoại.
+
+### 6. Cẩm Nang Học Viện eFootball Cao Cấp (`/cam-nang`)
+* Bộ 8 cẩm nang chuyên sâu giải thích chi tiết các thuật ngữ cốt lõi và kỹ thuật điều khiển meta của game: bẫy chỉ số OVR, Trạng thái mũi tên phong độ (Player Form), cơ chế ổn định ẩn (Conditioning Consistency), cách tăng Progression Points thủ công (Manual Allocation), kỹ thuật sút lực mạnh (Stunning Shot), cướp bóng bằng L2/LT (Match-up Defense), **kỹ thuật tối thượng Super Cancel (R1+R2 / RB+RT)** và bứt tốc đẩy bóng Sharp Touch.
+* Tích hợp bộ lọc tab phân loại mượt mà và thanh **Tìm kiếm thời gian thực (Live Search)** hiển thị tức thì. Giao diện xem dạng **Glassmorphic Overlay Modal** hiện đại và lôi cuốn.
+
 ---
 
 ## 🛠️ Kiến Trúc Hệ Thống & Công Nghệ

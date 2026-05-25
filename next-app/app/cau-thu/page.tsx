@@ -8,6 +8,7 @@ type PageProps = {
     position?: string;
     cardType?: string;
     playstyle?: string;
+    skill?: string;
     nationality?: string;
     club?: string;
     foot?: string;
@@ -32,6 +33,7 @@ export default async function PlayersPage({ searchParams }: PageProps) {
             position: typeof resolved.position === 'string' ? resolved.position.trim() : '',
             cardType: typeof resolved.cardType === 'string' ? resolved.cardType.trim() : '',
             playstyle: typeof resolved.playstyle === 'string' ? resolved.playstyle.trim() : '',
+            skill: typeof resolved.skill === 'string' ? resolved.skill.trim() : '',
             nationality:
               typeof resolved.nationality === 'string' ? resolved.nationality.trim() : '',
             club: typeof resolved.club === 'string' ? resolved.club.trim() : '',

@@ -32,6 +32,7 @@ export async function GET(request: NextRequest) {
       position: parseOptionalText(searchParams.get('position'), { maxLength: 8 }),
       cardType: parseOptionalText(searchParams.get('cardType'), { maxLength: 32 }),
       playstyle: parseOptionalText(searchParams.get('playstyle'), { maxLength: 40 }),
+      skill: parseOptionalText(searchParams.get('skill'), { maxLength: 80 }),
       nationality: parseOptionalText(searchParams.get('nationality'), { maxLength: 64 }),
       club: parseOptionalText(searchParams.get('club'), { maxLength: 80 }),
       foot: parseOptionalText(searchParams.get('foot'), { maxLength: 16 }),
