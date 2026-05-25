@@ -1,0 +1,47 @@
+{
+  "name": "efootball-vn-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev",
+    "build": "node node_modules/next/dist/bin/next build",
+    "start": "node node_modules/next/dist/bin/next start",
+    "lint": "node node_modules/next/dist/bin/next lint",
+    "db:indexes": "node scripts/ensure-mongo-indexes.mjs",
+    "import:data": "node scripts/import-scraped-data.mjs",
+    "sync:once": "node scripts/run-scrape-sync.mjs",
+    "sync:cron": "node scripts/run-scrape-sync-cron.mjs",
+    "smoke:ui": "node scripts/smoke-ui.mjs",
+    "audit:stitch": "node scripts/audit-stitch-controls.mjs",
+    "audit:localization": "node scripts/audit-localization.mjs",
+    "parity:score": "node scripts/parity-score.mjs",
+    "parity:gate": "node scripts/parity-score.mjs --min 90",
+    "test:parity": "node --test --import tsx tests/parity/*.test.ts",
+    "test:parity:update": "EFVN_UPDATE_PARITY_SNAPSHOT=1 node --test --import tsx tests/parity/player-calculation.parity.test.ts",
+    "check:quality": "npm run lint && npm run test:parity && npm run audit:localization && npm run parity:gate && npm run build",
+    "audit:stitch:map": "node scripts/stitch-control-parity-map.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-slider": "^1.2.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
+    "mongodb": "^6.21.0",
+    "next": "^15.5.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "^2.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.5.15",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.2"
+  }
+}

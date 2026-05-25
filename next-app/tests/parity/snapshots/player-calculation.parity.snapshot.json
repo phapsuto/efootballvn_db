@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "parityFormulaVersion": "2026-04-17.v3",
+    "files": [
+      "/Users/tonguyen/Library/CloudStorage/OneDrive-Personal/DrTo/eFootball/scraped-output/player-sample.json"
+    ],
+    "playerCount": 1,
+    "caseCount": 4
+  },
+  "cases": [
+    {
+      "id": "8554076__lv_max_cond_c_smart_mgr_quick_counter",
+      "player": {
+        "efhubId": "8554076",
+        "name": "Safi Belal",
+        "primaryPosition": "GK",
+        "levelMax": 1,
+        "overallBase": 116,
+        "overallMax": 116
+      },
+      "scenario": {
+        "level": 1,
+        "condition": "C",
+        "preset": "smart",
+        "managerId": "mgr-parity-001"
+      },
+      "output": {
+        "parityVersion": "2026-04-17.v3",
+        "overall": 118,
+        "pointsUsed": 0,
+        "pointsCap": 0,
+        "managerBonus": 3,
+        "managerStatsBonus": 4,
+        "managerStyleKey": "quickCounter",
+        "managerStyleFit": true,
+        "managerFitScore": 95,
+        "managerRoleAffinity": 74,
+        "managerInfluenceScore": 84,
+        "allocationCode": "0-0-0-0-0-0-0-0-0-0",
+        "keyStats": {
+          "gkAwareness": 95,
+          "gkReflexes": 95,
+          "gkCatching": 95,
+          "gkReach": 95,
+          "gkClearing": 95
+        }
+      }
+    },
+    {
+      "id": "8554076__lv_max_cond_e_attack_mgr_possession",
+      "player": {
+        "efhubId": "8554076",
+        "name": "Safi Belal",
+        "primaryPosition": "GK",
+        "levelMax": 1,
+        "overallBase": 116,
+        "overallMax": 116
+      },
+      "scenario": {
+        "level": 1,
+        "condition": "E",
+        "preset": "attack",
+        "managerId": "mgr-parity-002"
+      },
+      "output": {
+        "parityVersion": "2026-04-17.v3",
+        "overall": 116,
+        "pointsUsed": 0,
+        "pointsCap": 0,
+        "managerBonus": 3,
+        "managerStatsBonus": 4,
+        "managerStyleKey": "possessionGame",
+        "managerStyleFit": true,
+        "managerFitScore": 95,
+        "managerRoleAffinity": 70,
+        "managerInfluenceScore": 83,
+        "allocationCode": "0-0-0-0-0-0-0-0-0-0",
+        "keyStats": {
+          "gkAwareness": 93,
+          "gkReflexes": 93,
+          "gkCatching": 93,
+          "gkReach": 93,
+          "gkClearing": 93
+        }
+      }
+    },
+    {
+      "id": "8554076__lv_mid_cond_a_smart_no_manager",
+      "player": {
+        "efhubId": "8554076",
+        "name": "Safi Belal",
+        "primaryPosition": "GK",
+        "levelMax": 1,
+        "overallBase": 116,
+        "overallMax": 116
+      },
+      "scenario": {
+        "level": 1,
+        "condition": "A",
+        "preset": "smart",
+        "managerId": null
+      },
+      "output": {
+        "parityVersion": "2026-04-17.v3",
+        "overall": 118,
+        "pointsUsed": 0,
+        "pointsCap": 0,
+        "managerBonus": 0,
+        "managerStatsBonus": 0,
+        "managerStyleKey": null,
+        "managerStyleFit": false,
+        "managerFitScore": 0,
+        "managerRoleAffinity": 0,
+        "managerInfluenceScore": 0,
+        "allocationCode": "0-0-0-0-0-0-0-0-0-0",
+        "keyStats": {
+          "gkAwareness": 97,
+          "gkReflexes": 97,
+          "gkCatching": 97,
+          "gkReach": 97,
+          "gkClearing": 97
+        }
+      }
+    },
+    {
+      "id": "8554076__lv_min_cond_c_no_build_no_manager",
+      "player": {
+        "efhubId": "8554076",
+        "name": "Safi Belal",
+        "primaryPosition": "GK",
+        "levelMax": 1,
+        "overallBase": 116,
+        "overallMax": 116
+      },
+      "scenario": {
+        "level": 1,
+        "condition": "C",
+        "preset": "none",
+        "managerId": null
+      },
+      "output": {
+        "parityVersion": "2026-04-17.v3",
+        "overall": 116,
+        "pointsUsed": 0,
+        "pointsCap": 0,
+        "managerBonus": 0,
+        "managerStatsBonus": 0,
+        "managerStyleKey": null,
+        "managerStyleFit": false,
+        "managerFitScore": 0,
+        "managerRoleAffinity": 0,
+        "managerInfluenceScore": 0,
+        "allocationCode": "0-0-0-0-0-0-0-0-0-0",
+        "keyStats": {
+          "gkAwareness": 95,
+          "gkReflexes": 95,
+          "gkCatching": 95,
+          "gkReach": 95,
+          "gkClearing": 95
+        }
+      }
+    }
+  ]
+}

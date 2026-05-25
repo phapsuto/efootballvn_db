@@ -1,0 +1,2399 @@
+{
+  "generatedAt": "2026-05-25T03:26:09.074Z",
+  "stitchRoot": "/Users/tonguyen/Library/CloudStorage/OneDrive-Personal/DrTo/eFootball/Stitch",
+  "summary": {
+    "totalFiles": 18,
+    "totalControls": 230,
+    "mapped": 204,
+    "shouldDrop": 26,
+    "unmapped": 0
+  },
+  "modules": [
+    {
+      "module": "glossary",
+      "totalControls": 8,
+      "mapped": 8,
+      "shouldDrop": 0,
+      "unmapped": 0
+    },
+    {
+      "module": "guide_library",
+      "totalControls": 21,
+      "mapped": 21,
+      "shouldDrop": 0,
+      "unmapped": 0
+    },
+    {
+      "module": "lineup",
+      "totalControls": 40,
+      "mapped": 34,
+      "shouldDrop": 6,
+      "unmapped": 0
+    },
+    {
+      "module": "manager_detail",
+      "totalControls": 2,
+      "mapped": 0,
+      "shouldDrop": 2,
+      "unmapped": 0
+    },
+    {
+      "module": "managers_database",
+      "totalControls": 36,
+      "mapped": 28,
+      "shouldDrop": 8,
+      "unmapped": 0
+    },
+    {
+      "module": "misc",
+      "totalControls": 1,
+      "mapped": 1,
+      "shouldDrop": 0,
+      "unmapped": 0
+    },
+    {
+      "module": "player_detail",
+      "totalControls": 33,
+      "mapped": 31,
+      "shouldDrop": 2,
+      "unmapped": 0
+    },
+    {
+      "module": "player_search",
+      "totalControls": 27,
+      "mapped": 22,
+      "shouldDrop": 5,
+      "unmapped": 0
+    },
+    {
+      "module": "players_database",
+      "totalControls": 33,
+      "mapped": 32,
+      "shouldDrop": 1,
+      "unmapped": 0
+    },
+    {
+      "module": "profile",
+      "totalControls": 1,
+      "mapped": 1,
+      "shouldDrop": 0,
+      "unmapped": 0
+    },
+    {
+      "module": "tools_hub",
+      "totalControls": 17,
+      "mapped": 17,
+      "shouldDrop": 0,
+      "unmapped": 0
+    },
+    {
+      "module": "tournaments",
+      "totalControls": 11,
+      "mapped": 9,
+      "shouldDrop": 2,
+      "unmapped": 0
+    }
+  ],
+  "controls": [
+    {
+      "file": "c_ng_c_h_ng_d_n_mobile/code.html",
+      "module": "misc",
+      "type": "button",
+      "label": "Sử dụng ngay",
+      "href": "",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "CTA mở module thật thay cho button demo."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "Tham gia",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "GK",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "CB",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "LB",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "RB",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "DMF",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "CMF",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "LMF",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "RMF",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "Áp dụng bộ lọc",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Action filter/sort đã có trên players page."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "sort Sắp xếp: Chỉ số",
+      "href": "",
+      "status": "mapped",
+      "target": "/phan-tich#chi-so",
+      "reason": "Section analytics cho chỉ số đã có route thật."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "grid_view",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control trang trí hoặc shell mobile được bỏ khi port sang web app."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "Xem tất cả",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Filter mặc định nằm trên players page."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "/",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "/cau-thu",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "/hlv",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "/doi-hinh",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Công cụ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Chính sách",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Map sang trang chính sách."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Hợp tác",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hop-tac",
+      "reason": "Map sang trang hợp tác."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "Hỗ trợ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Map sang trang hỗ trợ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "TẤT CẢ",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Filter mặc định nằm trên players page."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "TIỀN ĐẠO",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "TIỀN VỆ",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "HẬU VỆ",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "THỦ MÔN",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc vị trí được gom vào panel filter trên trang cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "button",
+      "label": "compare_arrows",
+      "href": "",
+      "status": "mapped",
+      "target": "/so-sanh",
+      "reason": "Icon compare được thay bằng compare module thật."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "person",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "Tham gia",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "add_circle Tạo Đội Hình",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "chevron_right",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "chevron_right",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "chevron_right",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "chevron_left",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control trang trí hoặc shell mobile được bỏ khi port sang web app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "1",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "2",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "3",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "chevron_right",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "/",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "/cau-thu",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "/hlv",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "/doi-hinh",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Công cụ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "leaderboard Thứ hạng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "swap_horiz Chuyển nhượng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chuyen-nhuong",
+      "reason": "Map sang transfer & pack watch route."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "menu_book Cẩm nang",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cam-nang",
+      "reason": "Map sang thư viện cẩm nang."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "emoji_events Giải đấu",
+      "href": "#",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "groups Cộng đồng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/community",
+      "reason": "Map sang module cộng đồng."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Chính sách",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Map sang trang chính sách."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Hợp tác",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hop-tac",
+      "reason": "Map sang trang hợp tác."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "Hỗ trợ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Map sang trang hỗ trợ."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "filter_list Tất cả",
+      "href": "",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Filter mặc định nằm trên managers page."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "Sơ đồ",
+      "href": "",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Bộ lọc HLV được gom vào managers page."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "Lối chơi",
+      "href": "",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Bộ lọc HLV được gom vào managers page."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "Quốc tịch",
+      "href": "",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Bộ lọc HLV được gom vào managers page."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "button",
+      "label": "Xem chi tiết arrow_forward",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu/[id]",
+      "reason": "CTA dẫn vào player detail."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "home Home",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "database Database",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "groups Squad",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "module": "managers_database",
+      "type": "anchor",
+      "label": "construction Tools",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "button",
+      "label": "settings",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "button",
+      "label": "Login",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Map sang database HLV hoặc detail HLV."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Công cụ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Về chúng tôi",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Landing page hiện đóng vai trò giới thiệu sản phẩm."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Chính sách bảo mật",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Map sang trang chính sách."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Liên hệ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Điểm vào thật cho hỗ trợ/liên hệ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "button",
+      "label": "Tham gia",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "button",
+      "label": "Tạo Đội Hình",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "/",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "/cau-thu",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "/hlv",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "/doi-hinh",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Stitch control đã có href cụ thể."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Công cụ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "leaderboard Thứ hạng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "swap_horiz Chuyển nhượng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chuyen-nhuong",
+      "reason": "Map sang transfer & pack watch route."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "menu_book Cẩm nang",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cam-nang",
+      "reason": "Map sang thư viện cẩm nang."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "emoji_events Giải đấu",
+      "href": "#",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "groups Cộng đồng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/community",
+      "reason": "Map sang module cộng đồng."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Chính sách",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Map sang trang chính sách."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Hợp tác",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hop-tac",
+      "reason": "Map sang trang hợp tác."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "Hỗ trợ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Map sang trang hỗ trợ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "module": "player_detail",
+      "type": "button",
+      "label": "arrow_back",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "home Home",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "database Database",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "groups Squad",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "module": "player_detail",
+      "type": "anchor",
+      "label": "construction Tools",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "chi_ti_t_hlv_mobile/code.html",
+      "module": "manager_detail",
+      "type": "button",
+      "label": "arrow_back",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "chi_ti_t_hlv_mobile/code.html",
+      "module": "manager_detail",
+      "type": "button",
+      "label": "share",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "arrow_back",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "Đội hình",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "Thống kê",
+      "href": "",
+      "status": "mapped",
+      "target": "/tournaments/[id]",
+      "reason": "Tabs đội tuyển được gom vào team detail thật."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "Lịch thi đấu",
+      "href": "",
+      "status": "mapped",
+      "target": "/tournaments/[id]",
+      "reason": "Tabs đội tuyển được gom vào team detail thật."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "Tin tức",
+      "href": "",
+      "status": "mapped",
+      "target": "/tournaments/[id]",
+      "reason": "Tabs đội tuyển được gom vào team detail thật."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "button",
+      "label": "Lọc filter_list",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "anchor",
+      "label": "home Home",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "anchor",
+      "label": "database Database",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "anchor",
+      "label": "groups Squad",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "module": "tournaments",
+      "type": "anchor",
+      "label": "build Tools",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "h_s_c_nh_n_mobile/code.html",
+      "module": "profile",
+      "type": "button",
+      "label": "analytics Phân tích chuyên sâu",
+      "href": "",
+      "status": "mapped",
+      "target": "/phan-tich",
+      "reason": "Map sang analytics hub."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "person",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "tune Bộ lọc nâng cao",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Bộ lọc nâng cao được gom vào trang cầu thủ."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "compare_arrows So sánh (0)",
+      "href": "",
+      "status": "mapped",
+      "target": "/so-sanh",
+      "reason": "Map sang compare module."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "Chi tiết",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu/[id]",
+      "reason": "CTA dẫn vào player detail."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "Chi tiết",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu/[id]",
+      "reason": "CTA dẫn vào player detail."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "Chi tiết",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu/[id]",
+      "reason": "CTA dẫn vào player detail."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "Chi tiết",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu/[id]",
+      "reason": "CTA dẫn vào player detail."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "expand_more Xem thêm cầu thủ",
+      "href": "",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "1",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "2",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "3",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "12",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "button",
+      "label": "filter_list",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Control phân trang hoặc toggle filter của template được thay bằng UI phân trang/lọc thật trong app."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Map sang database HLV hoặc detail HLV."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Công cụ &amp; Hướng dẫn",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "sports_soccer Tấn công",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#tan-cong",
+      "reason": "Section analytics cho tấn công đã có route thật."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "shield Phòng ngự",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#phong-ngu",
+      "reason": "Section analytics cho phòng ngự đã có route thật."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "bar_chart Chỉ số",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#chi-so",
+      "reason": "Section analytics cho chỉ số đã có route thật."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "analytics Phân tích",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich",
+      "reason": "Map sang analytics hub."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Giới thiệu",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Landing page hiện đóng vai trò giới thiệu sản phẩm."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Liên hệ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Điểm vào thật cho hỗ trợ/liên hệ."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "module": "player_search",
+      "type": "anchor",
+      "label": "Quyền riêng tư",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Nội dung privacy được gộp vào trang chính sách."
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "home Home",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "database Database",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "groups Squad",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "module": "players_database",
+      "type": "anchor",
+      "label": "build Tools",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "button",
+      "label": "Tất cả",
+      "href": "",
+      "status": "mapped",
+      "target": "/tinh-nang",
+      "reason": "Filter mặc định nằm trên glossary page."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "button",
+      "label": "Player Skills",
+      "href": "",
+      "status": "mapped",
+      "target": "/tinh-nang",
+      "reason": "Map sang từ điển Skills & Playstyles."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "button",
+      "label": "Playstyles",
+      "href": "",
+      "status": "mapped",
+      "target": "/tinh-nang",
+      "reason": "Map sang từ điển Skills & Playstyles."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "button",
+      "label": "GK Skills",
+      "href": "",
+      "status": "mapped",
+      "target": "/tinh-nang",
+      "reason": "Map sang từ điển Skills & Playstyles."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "anchor",
+      "label": "home Home",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "anchor",
+      "label": "database Database",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "anchor",
+      "label": "groups Squad",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "module": "glossary",
+      "type": "anchor",
+      "label": "build Tools",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "button",
+      "label": "person",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "button",
+      "label": "Khám phá",
+      "href": "",
+      "status": "mapped",
+      "target": "/cam-nang#noi-bat",
+      "reason": "Map sang section nổi bật trong cẩm nang."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Map sang database HLV hoặc detail HLV."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Công cụ &amp; Hướng dẫn",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "sports_soccer Tấn công",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#tan-cong",
+      "reason": "Section analytics cho tấn công đã có route thật."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "shield Phòng ngự",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#phong-ngu",
+      "reason": "Section analytics cho phòng ngự đã có route thật."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "bar_chart Chỉ số",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#chi-so",
+      "reason": "Section analytics cho chỉ số đã có route thật."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "analytics Phân tích",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich",
+      "reason": "Map sang analytics hub."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Xem tất cả arrow_forward",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Filter mặc định nằm trên players page."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Giới thiệu",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Landing page hiện đóng vai trò giới thiệu sản phẩm."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Liên hệ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Điểm vào thật cho hỗ trợ/liên hệ."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "Quyền riêng tư",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Nội dung privacy được gộp vào trang chính sách."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "home Trang chủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "menu_book Học tập",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cam-nang",
+      "reason": "Mục học tập được gộp vào cẩm nang."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "groups Cầu thủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "module": "guide_library",
+      "type": "anchor",
+      "label": "settings Cài đặt",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Thiết lập được gộp vào hồ sơ local dashboard."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "button",
+      "label": "person",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "button",
+      "label": "Sử dụng ngay",
+      "href": "",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "CTA mở module thật thay cho button demo."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "button",
+      "label": "Bắt đầu so sánh chevron_right",
+      "href": "",
+      "status": "mapped",
+      "target": "/so-sanh",
+      "reason": "Map sang compare module."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Map sang database HLV hoặc detail HLV."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Công cụ &amp; Hướng dẫn",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "sports_soccer Tấn công",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#tan-cong",
+      "reason": "Section analytics cho tấn công đã có route thật."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "shield Phòng ngự",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#phong-ngu",
+      "reason": "Section analytics cho phòng ngự đã có route thật."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "bar_chart Chỉ số",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich#chi-so",
+      "reason": "Section analytics cho chỉ số đã có route thật."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "analytics Phân tích",
+      "href": "#",
+      "status": "mapped",
+      "target": "/phan-tich",
+      "reason": "Map sang analytics hub."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Giới thiệu",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Landing page hiện đóng vai trò giới thiệu sản phẩm."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Liên hệ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Điểm vào thật cho hỗ trợ/liên hệ."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "module": "tools_hub",
+      "type": "anchor",
+      "label": "Quyền riêng tư",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Nội dung privacy được gộp vào trang chính sách."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "person",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "settings",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "Tham gia",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "UPGRADE",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "CTA monetization/premium không nằm trong scope web app hiện tại."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "POSITION",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Metrics và selector này đã được gom vào lineup builder thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "PLAYSTYLE",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Metrics và selector này đã được gom vào lineup builder thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "add_circle",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon thêm cầu thủ trong template được thay bằng luồng chọn slot/cầu thủ thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "add_circle",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon thêm cầu thủ trong template được thay bằng luồng chọn slot/cầu thủ thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "add_circle",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon thêm cầu thủ trong template được thay bằng luồng chọn slot/cầu thủ thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "bolt Offensive",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Metrics và selector này đã được gom vào lineup builder thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "shield Defensive",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Metrics và selector này đã được gom vào lineup builder thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "sync Balance",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Metrics và selector này đã được gom vào lineup builder thật."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "home Trang chủ",
+      "href": "",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "groups Đội hình",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "leaderboard Xếp hạng",
+      "href": "",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "person Cá nhân",
+      "href": "",
+      "status": "mapped",
+      "target": "/ho-so",
+      "reason": "Map sang hồ sơ local dashboard."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Trang chủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Cầu thủ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "HLV",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hlv",
+      "reason": "Map sang database HLV hoặc detail HLV."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Đội hình",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Công cụ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "groups Đội hình",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "leaderboard Thứ hạng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "swap_horiz Chuyển nhượng",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chuyen-nhuong",
+      "reason": "Map sang transfer & pack watch route."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "menu_book Cẩm nang",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cam-nang",
+      "reason": "Map sang thư viện cẩm nang."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "emoji_events Giải đấu",
+      "href": "#",
+      "status": "mapped",
+      "target": "/tournaments",
+      "reason": "Map sang rankings/tournaments."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Chính sách",
+      "href": "#",
+      "status": "mapped",
+      "target": "/chinh-sach",
+      "reason": "Map sang trang chính sách."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Điều khoản",
+      "href": "#",
+      "status": "mapped",
+      "target": "/dieu-khoan",
+      "reason": "Map sang trang điều khoản."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Hợp tác",
+      "href": "#",
+      "status": "mapped",
+      "target": "/hop-tac",
+      "reason": "Map sang trang hợp tác."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "Hỗ trợ",
+      "href": "#",
+      "status": "mapped",
+      "target": "/ho-tro",
+      "reason": "Map sang trang hỗ trợ."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "notifications",
+      "href": "",
+      "status": "mapped",
+      "target": "/thong-bao",
+      "reason": "Map sang dashboard thông báo hệ thống."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "4-2-1-3 expand_more",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Formation selector được thay bằng form thật trong lineup builder."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "auto_fix_high Tự Động Chọn",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder với action tương ứng."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "save Lưu Đội Hình",
+      "href": "",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "button",
+      "label": "swap_horiz",
+      "href": "",
+      "status": "should_drop",
+      "target": null,
+      "reason": "Icon shell hoặc hành vi native được thay bằng route/action rõ ràng trong Next app."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "home Home",
+      "href": "#",
+      "status": "mapped",
+      "target": "/",
+      "reason": "Map sang landing page thay cho nav placeholder."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "database Database",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cau-thu",
+      "reason": "Map sang database cầu thủ."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "groups Squad",
+      "href": "#",
+      "status": "mapped",
+      "target": "/doi-hinh",
+      "reason": "Map sang lineup builder hoặc detail đội hình."
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "module": "lineup",
+      "type": "anchor",
+      "label": "construction Tools",
+      "href": "#",
+      "status": "mapped",
+      "target": "/cong-cu",
+      "reason": "Map sang trung tâm công cụ."
+    }
+  ]
+}

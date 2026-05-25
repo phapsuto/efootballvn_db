@@ -1,0 +1,784 @@
+{
+  "generatedAt": "2026-05-25T03:26:05.947Z",
+  "summary": {
+    "totalFiles": 18,
+    "totalButtons": 102,
+    "buttonsWithDataAction": 1,
+    "totalAnchors": 128,
+    "placeholderAnchors": 116,
+    "placeholderButtons": 101
+  },
+  "files": [
+    {
+      "file": "c_ng_c_h_ng_d_n_mobile/code.html",
+      "totalButtons": 1,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 0,
+      "placeholderAnchors": 0,
+      "placeholderButtons": 1
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "totalButtons": 13,
+      "buttonsWithDataAction": 1,
+      "totalAnchors": 9,
+      "placeholderAnchors": 5,
+      "placeholderButtons": 12
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "totalButtons": 7,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 0,
+      "placeholderAnchors": 0,
+      "placeholderButtons": 7
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "totalButtons": 12,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 14,
+      "placeholderAnchors": 10,
+      "placeholderButtons": 12
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "totalButtons": 6,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 4,
+      "placeholderAnchors": 4,
+      "placeholderButtons": 6
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "totalButtons": 2,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 9,
+      "placeholderAnchors": 9,
+      "placeholderButtons": 2
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "totalButtons": 3,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 14,
+      "placeholderAnchors": 10,
+      "placeholderButtons": 3
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "totalButtons": 1,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 4,
+      "placeholderAnchors": 4,
+      "placeholderButtons": 1
+    },
+    {
+      "file": "chi_ti_t_hlv_mobile/code.html",
+      "totalButtons": 2,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 0,
+      "placeholderAnchors": 0,
+      "placeholderButtons": 2
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "totalButtons": 7,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 4,
+      "placeholderAnchors": 4,
+      "placeholderButtons": 7
+    },
+    {
+      "file": "h_s_c_nh_n_mobile/code.html",
+      "totalButtons": 1,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 0,
+      "placeholderAnchors": 0,
+      "placeholderButtons": 1
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "totalButtons": 14,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 13,
+      "placeholderAnchors": 13,
+      "placeholderButtons": 14
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "totalButtons": 0,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 4,
+      "placeholderAnchors": 4,
+      "placeholderButtons": 0
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "totalButtons": 4,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 4,
+      "placeholderAnchors": 4,
+      "placeholderButtons": 4
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "totalButtons": 3,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 18,
+      "placeholderAnchors": 18,
+      "placeholderButtons": 3
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "totalButtons": 4,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 13,
+      "placeholderAnchors": 13,
+      "placeholderButtons": 4
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "totalButtons": 17,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 14,
+      "placeholderAnchors": 14,
+      "placeholderButtons": 17
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "totalButtons": 5,
+      "buttonsWithDataAction": 0,
+      "totalAnchors": 4,
+      "placeholderAnchors": 4,
+      "placeholderButtons": 5
+    }
+  ],
+  "topPlaceholderControls": [
+    {
+      "file": "c_ng_c_h_ng_d_n_mobile/code.html",
+      "controlType": "button",
+      "label": "Sử dụng ngay"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Chính sách (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Điều khoản (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Hợp tác (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Hỗ trợ (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "Tham gia"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "GK"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "CB"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "LB"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "RB"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "controlType": "button",
+      "label": "TẤT CẢ"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "controlType": "button",
+      "label": "TIỀN ĐẠO"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "controlType": "button",
+      "label": "TIỀN VỆ"
+    },
+    {
+      "file": "c_s_d_li_u_c_u_th_mobile/code.html",
+      "controlType": "button",
+      "label": "HẬU VỆ"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "leaderboard Thứ hạng (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "swap_horiz Chuyển nhượng (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "menu_book Cẩm nang (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "emoji_events Giải đấu (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "person"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "Tham gia"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "add_circle Tạo Đội Hình"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "chevron_right"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "anchor",
+      "label": "home Home (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "anchor",
+      "label": "database Database (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "anchor",
+      "label": "groups Squad (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "anchor",
+      "label": "construction Tools (href=\"#\")"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "filter_list Tất cả"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "Sơ đồ"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "Lối chơi"
+    },
+    {
+      "file": "c_s_d_li_u_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "Quốc tịch"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "anchor",
+      "label": "Trang chủ (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "anchor",
+      "label": "Cầu thủ (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "anchor",
+      "label": "HLV (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "anchor",
+      "label": "Đội hình (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "button",
+      "label": "settings"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_c_p_nh_t/code.html",
+      "controlType": "button",
+      "label": "Login"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "leaderboard Thứ hạng (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "swap_horiz Chuyển nhượng (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "menu_book Cẩm nang (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "emoji_events Giải đấu (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "Tham gia"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "Tạo Đội Hình"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "home Home (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "database Database (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "groups Squad (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "construction Tools (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_c_u_th_mobile/code.html",
+      "controlType": "button",
+      "label": "arrow_back"
+    },
+    {
+      "file": "chi_ti_t_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "arrow_back"
+    },
+    {
+      "file": "chi_ti_t_hlv_mobile/code.html",
+      "controlType": "button",
+      "label": "share"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "anchor",
+      "label": "home Home (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "anchor",
+      "label": "database Database (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "anchor",
+      "label": "groups Squad (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "anchor",
+      "label": "build Tools (href=\"#\")"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "button",
+      "label": "arrow_back"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "button",
+      "label": "Đội hình"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "button",
+      "label": "Thống kê"
+    },
+    {
+      "file": "chi_ti_t_i_tuy_n_mobile/code.html",
+      "controlType": "button",
+      "label": "Lịch thi đấu"
+    },
+    {
+      "file": "h_s_c_nh_n_mobile/code.html",
+      "controlType": "button",
+      "label": "analytics Phân tích chuyên sâu"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "anchor",
+      "label": "Trang chủ (href=\"#\")"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "anchor",
+      "label": "Cầu thủ (href=\"#\")"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "anchor",
+      "label": "HLV (href=\"#\")"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "anchor",
+      "label": "Đội hình (href=\"#\")"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ &amp; Hướng dẫn (href=\"#\")"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "button",
+      "label": "person"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "button",
+      "label": "tune Bộ lọc nâng cao"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "button",
+      "label": "compare_arrows So sánh (0)"
+    },
+    {
+      "file": "k_t_qu_t_m_ki_m_n_ng_cao/code.html",
+      "controlType": "button",
+      "label": "Chi tiết"
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "home Home (href=\"#\")"
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "database Database (href=\"#\")"
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "groups Squad (href=\"#\")"
+    },
+    {
+      "file": "so_s_nh_c_u_th_mobile/code.html",
+      "controlType": "anchor",
+      "label": "build Tools (href=\"#\")"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "anchor",
+      "label": "home Home (href=\"#\")"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "anchor",
+      "label": "database Database (href=\"#\")"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "anchor",
+      "label": "groups Squad (href=\"#\")"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "anchor",
+      "label": "build Tools (href=\"#\")"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "button",
+      "label": "Tất cả"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "button",
+      "label": "Player Skills"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "button",
+      "label": "Playstyles"
+    },
+    {
+      "file": "t_i_n_k_n_ng_mobile/code.html",
+      "controlType": "button",
+      "label": "GK Skills"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "anchor",
+      "label": "Trang chủ (href=\"#\")"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "anchor",
+      "label": "Cầu thủ (href=\"#\")"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "anchor",
+      "label": "HLV (href=\"#\")"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "anchor",
+      "label": "Đội hình (href=\"#\")"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ &amp; Hướng dẫn (href=\"#\")"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "button",
+      "label": "person"
+    },
+    {
+      "file": "th_vi_n_h_ng_d_n/code.html",
+      "controlType": "button",
+      "label": "Khám phá"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "anchor",
+      "label": "Trang chủ (href=\"#\")"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "anchor",
+      "label": "Cầu thủ (href=\"#\")"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "anchor",
+      "label": "HLV (href=\"#\")"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "anchor",
+      "label": "Đội hình (href=\"#\")"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ &amp; Hướng dẫn (href=\"#\")"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "button",
+      "label": "person"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "button",
+      "label": "Sử dụng ngay"
+    },
+    {
+      "file": "trung_t_m_c_ng_c/code.html",
+      "controlType": "button",
+      "label": "Bắt đầu so sánh chevron_right"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Trang chủ (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Cầu thủ (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "HLV (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Đội hình (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "anchor",
+      "label": "Công cụ (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "person"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "settings"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "Tham gia"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_efootball.vn_style/code.html",
+      "controlType": "button",
+      "label": "UPGRADE"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "anchor",
+      "label": "home Home (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "anchor",
+      "label": "database Database (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "anchor",
+      "label": "groups Squad (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "anchor",
+      "label": "construction Tools (href=\"#\")"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "button",
+      "label": "notifications"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "button",
+      "label": "4-2-1-3 expand_more"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "button",
+      "label": "auto_fix_high Tự Động Chọn"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "button",
+      "label": "save Lưu Đội Hình"
+    },
+    {
+      "file": "x_y_d_ng_i_h_nh_mobile/code.html",
+      "controlType": "button",
+      "label": "swap_horiz"
+    }
+  ]
+}

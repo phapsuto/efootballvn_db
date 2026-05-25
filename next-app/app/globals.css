@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+/*
+  Stitch "Kinetic Navy" — Material Design 3 palette taken verbatim from
+  stitch/*_mobile/code.html. Every semantic token is mirrored as a CSS
+  custom property so raw HTML/inline styles can reference them too.
+*/
+:root {
+  --stitch-background: #001136;
+  --stitch-surface: #001136;
+  --stitch-surface-dim: #001136;
+  --stitch-surface-bright: #003483;
+  --stitch-surface-variant: #00307a;
+  --stitch-surface-container-lowest: #000c2b;
+  --stitch-surface-container-low: #001947;
+  --stitch-surface-container: #001c4f;
+  --stitch-surface-container-high: #002664;
+  --stitch-surface-container-highest: #00307a;
+  --stitch-on-background: #dae2ff;
+  --stitch-on-surface: #dae2ff;
+  --stitch-on-surface-variant: #c4c6d3;
+  --stitch-outline: #8e909d;
+  --stitch-outline-variant: #434652;
+  --stitch-primary: #b1c5ff;
+  --stitch-on-primary: #002c71;
+  --stitch-primary-container: #0a3d91;
+  --stitch-on-primary-container: #8dadff;
+  --stitch-secondary: #76dc82;
+  --stitch-on-secondary: #003911;
+  --stitch-secondary-container: #017c2f;
+  --stitch-on-secondary-container: #afffb2;
+  --stitch-tertiary: #e9c400;
+  --stitch-on-tertiary: #3a3000;
+  --stitch-tertiary-container: #c8a900;
+  --stitch-on-tertiary-container: #4b3e00;
+  --stitch-error: #ffb4ab;
+  --stitch-on-error: #690005;
+  --stitch-error-container: #93000a;
+  --stitch-on-error-container: #ffdad6;
+
+  --radius: 0.75rem;
+}
+
+/* Material Symbols icon font (matches Stitch HTML verbatim) */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  @apply border-outline-variant;
+}
+
+body {
+  @apply bg-background text-on-surface antialiased;
+  font-family: var(--font-body), Inter, system-ui, sans-serif;
+  background:
+    radial-gradient(1100px 500px at 90% -10%, rgba(177, 197, 255, 0.14), transparent 60%),
+    radial-gradient(1000px 420px at -10% -20%, rgba(118, 220, 130, 0.10), transparent 58%),
+    var(--stitch-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headline), Inter, system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--stitch-surface-container-lowest);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--stitch-surface-container-high);
+  border-radius: 999px;
+}
+
+/* ---------- Stitch structural helpers (lifted from code.html) ---------- */
+.pitch-gradient {
+  background: radial-gradient(circle at center, #017c2f 0%, #003911 100%);
+}
+
+.pitch-lines {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 20%, 20% 100%;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.glass-panel {
+  background: rgba(0, 52, 131, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--stitch-surface-container-lowest);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--stitch-surface-container-high);
+  border-radius: 999px;
+}
+
+/* ---------- Stitch component utilities ---------- */
+@layer components {
+  .stitch-page {
+    @apply min-h-screen bg-background text-on-surface pt-16;
+  }
+
+  .stitch-nav {
+    @apply fixed inset-x-0 top-0 z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant shadow-2xl shadow-primary-container/20;
+  }
+
+  .stitch-nav-inner {
+    @apply flex h-16 items-center justify-between gap-6 px-6 max-w-screen-2xl mx-auto;
+  }
+
+  .stitch-nav-link {
+    @apply text-on-surface-variant font-medium hover:text-primary transition-all duration-300;
+  }
+
+  .stitch-nav-link-active {
+    @apply text-primary font-bold border-b-2 border-primary pb-1;
+  }
+
+  .stitch-cta {
+    @apply bg-primary hover:bg-primary-fixed text-on-primary px-5 py-2 rounded-lg font-bold text-sm tracking-wide transition-all active:scale-95;
+  }
+
+  .stitch-ghost-btn {
+    @apply flex items-center gap-2 bg-surface-container px-4 py-2.5 rounded-lg text-xs font-bold text-on-surface-variant border border-outline-variant hover:bg-surface-container-high transition-all;
+  }
+
+  .stitch-icon-btn {
+    @apply flex items-center justify-center bg-surface-container w-10 h-10 rounded-lg text-on-surface-variant border border-outline-variant hover:bg-surface-container-high transition-all;
+  }
+
+  .stitch-label {
+    @apply text-[10px] font-bold uppercase tracking-[0.18em] text-outline;
+  }
+
+  .stitch-label-accent {
+    @apply text-[10px] font-bold uppercase tracking-[0.18em] text-primary;
+  }
+
+  .stitch-headline {
+    @apply font-headline text-4xl font-black uppercase italic tracking-tight text-on-surface;
+  }
+
+  .stitch-subtle {
+    @apply text-sm text-on-surface-variant;
+  }
+
+  .stitch-card {
+    @apply relative bg-surface-container rounded-xl p-4 transition-all duration-300;
+  }
+
+  .stitch-card:hover {
+    @apply shadow-2xl shadow-primary/10 ring-1 ring-primary/40;
+  }
+
+  .stitch-side-rail {
+    @apply sticky top-20 w-72 bg-surface-container/70 backdrop-blur-lg flex-shrink-0 flex flex-col overflow-y-auto rounded-xl;
+  }
+
+  .stitch-filter-input {
+    @apply w-full bg-surface-container-lowest/60 border border-outline-variant rounded-lg px-4 py-2 text-sm text-on-surface placeholder:text-outline outline-none transition-all focus:ring-2 focus:ring-primary/50 focus:border-primary;
+  }
+
+  .stitch-filter-select {
+    @apply w-full bg-surface-container-lowest/60 border border-outline-variant text-sm text-on-surface-variant p-2 rounded-lg outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .stitch-position-chip {
+    @apply bg-surface-container-high text-on-surface-variant p-1 text-[10px] font-black rounded hover:bg-primary/20 hover:text-primary transition-all;
+  }
+
+  .stitch-position-chip-active {
+    @apply bg-primary text-on-primary;
+  }
+
+  .stitch-stat {
+    @apply text-center;
+  }
+
+  .stitch-stat-value {
+    @apply text-sm font-bold text-on-surface;
+  }
+
+  .stitch-stat-label {
+    @apply text-[9px] font-bold text-outline uppercase tracking-widest;
+  }
+
+  .stitch-chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-outline-variant bg-surface-container/70 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant;
+  }
+
+  .stitch-chip-primary {
+    @apply border-primary/30 bg-primary/10 text-primary;
+  }
+
+  .stitch-chip-secondary {
+    @apply border-secondary/30 bg-secondary/10 text-secondary;
+  }
+
+  .stitch-chip-tertiary {
+    @apply border-tertiary/30 bg-tertiary/10 text-tertiary;
+  }
+
+  /* legacy aliases so existing class names keep rendering */
+  .stitch-chip-emerald { @apply stitch-chip-primary; }
+  .stitch-chip-amber { @apply stitch-chip-tertiary; }
+  .stitch-chip-sky { @apply stitch-chip-primary; }
+
+  .stitch-table {
+    @apply w-full text-left border-separate border-spacing-y-1;
+  }
+
+  .stitch-table-row {
+    @apply bg-surface-container hover:bg-surface-container-high transition-colors;
+  }
+
+  .stitch-table-row-alt {
+    @apply bg-surface-container/70;
+  }
+
+  .stitch-section-title {
+    @apply font-headline text-2xl font-black uppercase italic text-on-surface tracking-tight;
+  }
+}

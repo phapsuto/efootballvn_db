@@ -1,0 +1,14 @@
+node_modules/
+.env
+playwright-report/
+test-results/
+coverage/
+scraped-output/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+mongodb-local/
+
+

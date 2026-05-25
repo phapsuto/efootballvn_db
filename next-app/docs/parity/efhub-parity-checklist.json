@@ -1,0 +1,386 @@
+{
+  "schemaVersion": "1.0.0",
+  "project": "efootball.vn",
+  "referenceSite": "https://efhub.com",
+  "updatedAt": "2026-04-15",
+  "statusScale": {
+    "pass": 1,
+    "partial": 0.5,
+    "fail": 0,
+    "todo": 0,
+    "na": null
+  },
+  "modules": [
+    {
+      "id": "players_catalog",
+      "name": "Players Catalog",
+      "weight": 14,
+      "checks": [
+        {
+          "id": "players_filters_full",
+          "name": "Search + filters (q, position, card type, playstyle, nation, club, foot, height)",
+          "weight": 4,
+          "status": "pass",
+          "evidence": "GET /api/players + /cau-thu filters"
+        },
+        {
+          "id": "players_sort_paging",
+          "name": "Sort + pagination parity",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "overall/name/updated sort + page controls"
+        },
+        {
+          "id": "players_card_grid_core_info",
+          "name": "Card grid with OVR + core mini-stats",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "player list cards"
+        },
+        {
+          "id": "players_data_source_visibility",
+          "name": "Visible data source state (Mongo/mock)",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "summary label in list views"
+        },
+        {
+          "id": "players_search_performance_index_coverage",
+          "name": "Index coverage for player queries",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "ensure-mongo-indexes players indexes"
+        }
+      ]
+    },
+    {
+      "id": "player_detail_build",
+      "name": "Player Detail + Build Engine",
+      "weight": 22,
+      "checks": [
+        {
+          "id": "player_detail_dynamic_route",
+          "name": "Dynamic route /cau-thu/:id",
+          "weight": 4,
+          "status": "pass",
+          "evidence": "Next.js route + detail render"
+        },
+        {
+          "id": "player_level_slider_live_binding",
+          "name": "Max level slider updates stats/OVR live",
+          "weight": 4,
+          "status": "pass",
+          "evidence": "calculatePlayerProjection + slider"
+        },
+        {
+          "id": "player_condition_arrow_live_binding",
+          "name": "Condition arrows update projection live",
+          "weight": 4,
+          "status": "pass",
+          "evidence": "A/B/C/D/E condition controls"
+        },
+        {
+          "id": "player_build_allocation_engine",
+          "name": "Build allocation + cap + presets",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "build controls + preset apply"
+        },
+        {
+          "id": "player_manager_impact_projection",
+          "name": "Manager style impact in projection",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "manager influence now combines playstyle tier + role affinity + fit score in shared gameplay engine"
+        },
+        {
+          "id": "player_compare_flow",
+          "name": "Player compare flow (search + select)",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/so-sanh route + compare table + deep-link from /cau-thu/:id"
+        },
+        {
+          "id": "player_build_share_deeplink",
+          "name": "Build share deeplink (lv/condition/build)",
+          "weight": 1,
+          "status": "pass",
+          "evidence": "query string encode/decode"
+        },
+        {
+          "id": "player_community_builds_end_to_end",
+          "name": "Community builds read/write",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "player detail now supports community build publish + scope=mine management (public/private toggle, delete, apply) via nested build routes"
+        }
+      ]
+    },
+    {
+      "id": "managers",
+      "name": "Managers",
+      "weight": 10,
+      "checks": [
+        {
+          "id": "managers_search_filters_sort",
+          "name": "Manager search/filter/sort parity",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "/hlv list + GET /api/managers"
+        },
+        {
+          "id": "manager_detail_style_affinity",
+          "name": "Manager detail style/affinity view",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "/hlv/:id"
+        },
+        {
+          "id": "manager_influence_model_quality",
+          "name": "Manager influence model quality vs eFHUB",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "shared manager influence engine (style/affinity/fit) with parity tests for strong-vs-weak manager scenarios"
+        },
+        {
+          "id": "manager_to_lineup_deeplink",
+          "name": "Manager deep-link to lineup builder",
+          "weight": 1,
+          "status": "pass",
+          "evidence": "managerId + formation query handoff"
+        }
+      ]
+    },
+    {
+      "id": "packs",
+      "name": "Packs",
+      "weight": 8,
+      "checks": [
+        {
+          "id": "packs_list_search",
+          "name": "Pack list + keyword search",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/packs + GET /api/packs"
+        },
+        {
+          "id": "pack_detail_status_metrics",
+          "name": "Pack detail status + metrics",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/packs/:id"
+        },
+        {
+          "id": "pack_player_roster_links",
+          "name": "Pack roster links to players",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "pack players grid"
+        },
+        {
+          "id": "pack_event_time_parity",
+          "name": "Pack event timing parity/zone precision",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "shared pack timing utility now renders Ho Chi Minh timezone window + countdown in packs list/detail and API payloads"
+        }
+      ]
+    },
+    {
+      "id": "lineup_builder",
+      "name": "Lineup Builder",
+      "weight": 14,
+      "checks": [
+        {
+          "id": "lineup_formations_slots",
+          "name": "Formations + slot mapping",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "4-3-3 / 4-2-3-1 / 4-4-2"
+        },
+        {
+          "id": "lineup_assign_clear_controls",
+          "name": "Assign/clear controls",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "slot assign + clear slot/all"
+        },
+        {
+          "id": "lineup_autofill",
+          "name": "Autofill by OVR",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "Tự Điền"
+        },
+        {
+          "id": "lineup_recommend_by_manager",
+          "name": "Recommend by manager style",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "Gợi Ý Theo HLV"
+        },
+        {
+          "id": "lineup_team_metrics",
+          "name": "Team metrics (ovr/attack/defense/stamina/chemistry/style fit)",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "lineup metrics moved to shared gameplay engine with chemistry/fit/balance formulas and regression tests"
+        },
+        {
+          "id": "lineup_duplicate_guard",
+          "name": "Duplicate player prevention",
+          "weight": 1,
+          "status": "pass",
+          "evidence": "same player reassigned, old slot cleared"
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "weight": 8,
+      "checks": [
+        {
+          "id": "community_tabs",
+          "name": "Discover/Following/Followers tabs",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/community tabs"
+        },
+        {
+          "id": "community_filters",
+          "name": "Community search + region/country filters",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "GET /api/community/profiles"
+        },
+        {
+          "id": "community_profile_detail",
+          "name": "Profile detail + favorite player link",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/community/:id"
+        },
+        {
+          "id": "community_social_actions",
+          "name": "Follow/unfollow + social actions parity",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "POST/DELETE /api/community/profiles/:id/follow + list/detail UI follow actions + share profile"
+        }
+      ]
+    },
+    {
+      "id": "rankings",
+      "name": "Rankings/Tournaments",
+      "weight": 8,
+      "checks": [
+        {
+          "id": "rankings_mode_tabs",
+          "name": "Mode tabs (all/mobile coop/crossplay coop)",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/tournaments mode filters"
+        },
+        {
+          "id": "rankings_sort_search_paging",
+          "name": "Sort/search/pagination parity",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/api/league/rankings"
+        },
+        {
+          "id": "rankings_team_detail",
+          "name": "Team detail summary parity",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "/tournaments/:id"
+        },
+        {
+          "id": "rankings_trend_delta_history",
+          "name": "Trend/delta/history parity",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "League list + detail now render 24h points/rank delta and history timeline from API trend payload"
+        }
+      ]
+    },
+    {
+      "id": "data_pipeline",
+      "name": "Data Pipeline + Scraper Sync",
+      "weight": 10,
+      "checks": [
+        {
+          "id": "import_pipeline_standardization",
+          "name": "Import pipeline normalization for players/managers/packs/community/league/builds",
+          "weight": 3,
+          "status": "pass",
+          "evidence": "scripts/import-scraped-data.mjs"
+        },
+        {
+          "id": "mongo_index_bootstrap",
+          "name": "Mongo index bootstrap coverage",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "scripts/ensure-mongo-indexes.mjs"
+        },
+        {
+          "id": "scheduled_sync_cron",
+          "name": "Scheduled sync cadence (30-60m)",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "scripts/run-scrape-sync-cron.mjs schedules minute 12 hourly plus minute 42 peak windows Mon/Thu evenings in Asia/Ho_Chi_Minh"
+        },
+        {
+          "id": "new_card_detection_incremental",
+          "name": "Incremental new card detection",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "scripts/import-scraped-data.mjs now writes import-report.json with new/updated/unchanged counts and sample ids per dataset"
+        },
+        {
+          "id": "scraper_stealth_productionization",
+          "name": "Stealth scraper productionization",
+          "weight": 1,
+          "status": "pass",
+          "evidence": "scripts/run-scrape-sync.mjs wraps root Playwright scraper with sync status, stealth metadata, and shared health visibility in Next workspace"
+        }
+      ]
+    },
+    {
+      "id": "platform_quality",
+      "name": "API/Security/Localization/Quality",
+      "weight": 6,
+      "checks": [
+        {
+          "id": "api_rate_limit",
+          "name": "API rate limiting",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "middleware API limiter"
+        },
+        {
+          "id": "api_cache_layer",
+          "name": "API cache layer for heavy endpoints",
+          "weight": 1,
+          "status": "pass",
+          "evidence": "withApiCache usage"
+        },
+        {
+          "id": "localization_vi_coverage",
+          "name": "Vietnamese localization coverage (except technical terms)",
+          "weight": 2,
+          "status": "pass",
+          "evidence": "scripts/audit-localization.mjs gates residual English UI phrases while app/components labels were localized to Vietnamese except gameplay technical terms"
+        },
+        {
+          "id": "smoke_regression_suite",
+          "name": "Smoke regression suite for key user flows",
+          "weight": 1,
+          "status": "pass",
+          "evidence": "scripts/smoke-ui.mjs"
+        }
+      ]
+    }
+  ]
+}
