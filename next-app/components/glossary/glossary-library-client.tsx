@@ -227,7 +227,7 @@ export function GlossaryLibraryClient({ items }: GlossaryLibraryClientProps) {
             {/* Absolute Close button */}
             <button
               onClick={() => setSelectedItem(null)}
-              className="absolute right-4 top-4 text-on-surface-variant hover:text-on-surface p-2 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-high transition-all"
+              className="absolute right-4 top-4 z-50 text-on-surface-variant hover:text-on-surface p-2 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-high transition-all"
               aria-label="Đóng"
             >
               <X className="h-5 w-5" />
@@ -340,14 +340,8 @@ export function GlossaryLibraryClient({ items }: GlossaryLibraryClientProps) {
               </div>
             </div>
 
-            {/* Modal Footer with interactive CTA button */}
-            <div className="p-4 sm:p-6 bg-surface-container-low border-t border-outline-variant flex justify-end gap-3 flex-shrink-0">
-              <button
-                onClick={() => setSelectedItem(null)}
-                className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-outline hover:text-on-surface transition-colors"
-              >
-                Đóng
-              </button>
+             {/* Modal Footer with interactive CTA button */}
+            <div className="p-4 sm:p-6 bg-surface-container-low border-t border-outline-variant flex justify-end flex-shrink-0">
               <Link
                 href={
                   selectedItem.category === 'playstyle'

@@ -177,7 +177,7 @@ export function GuidesClient({ initialGuides }: GuidesClientProps) {
               </div>
               <button
                 onClick={() => setSelectedGuide(null)}
-                className="absolute top-6 right-6 p-2 rounded-full bg-white/5 text-on-surface-variant hover:text-on-surface hover:bg-white/10 transition-colors focus:outline-none"
+                className="absolute top-6 right-6 z-50 p-2 rounded-full bg-white/5 text-on-surface-variant hover:text-on-surface hover:bg-white/10 transition-colors focus:outline-none"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -199,16 +199,6 @@ export function GuidesClient({ initialGuides }: GuidesClientProps) {
                   {selectedGuide.content}
                 </div>
               </div>
-            </div>
-
-            {/* Modal Footer */}
-            <div className="p-4 bg-surface-container-high/60 border-t border-white/5 flex justify-end">
-              <button
-                onClick={() => setSelectedGuide(null)}
-                className="px-5 py-2 text-xs sm:text-sm font-bold uppercase tracking-wider rounded-lg bg-primary text-on-primary hover:bg-primary-hover shadow-lg shadow-primary/20 transition-all"
-              >
-                Đóng cẩm nang
-              </button>
             </div>
           </div>
         </div>
