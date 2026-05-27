@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 import { SiteHeader } from '@/components/layout/site-header';
 import { getSyncPipelineStatus } from '@/lib/sync/status';
-import { listLeagueTeams, listManagers, listPacks, listPlayers, listGuides } from '@/lib/data/repository';
+import { listLeagueTeams, listManagers, listPacks, listPlayers, listGuides, type Guide } from '@/lib/data/repository';
 import { getPackTiming } from '@/lib/packs/pack-timing';
 
 export default async function HomePage() {
@@ -270,7 +270,7 @@ export default async function HomePage() {
             </Link>
           </div>
           <div className="grid gap-5 md:grid-cols-3">
-            {latestGuides.map((guide) => (
+            {latestGuides.map((guide: Guide) => (
               <Link
                 key={guide.id}
                 href="/cam-nang#thuat-ngu"
