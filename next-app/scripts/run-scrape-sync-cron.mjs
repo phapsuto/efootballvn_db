@@ -124,11 +124,11 @@ async function updateSchedulerStatus(filePath, patch) {
   return next;
 }
 
-function runSyncScript(args) {
+function runSyncScript(scriptName, args) {
   return new Promise((resolve, reject) => {
     const child = spawn(
       process.execPath,
-      [path.resolve(NEXT_APP_ROOT, 'scripts', 'sync-efbase.mjs'), ...args],
+      [path.resolve(NEXT_APP_ROOT, 'scripts', scriptName), ...args],
       {
         cwd: NEXT_APP_ROOT,
         env: process.env,
@@ -142,7 +142,7 @@ function runSyncScript(args) {
         resolve();
         return;
       }
-      reject(new Error(`sync-efbase.mjs exited with code ${code}`));
+      reject(new Error(`${scriptName} exited with code ${code}`));
     });
   });
 }
@@ -185,12 +185,18 @@ async function loop() {
     }
 
     try {
-      await runSyncScript([
+      // eslint-disable-next-line no-console
+      console.log('[scrape-sync-cron] Starting player synchronization...');
+      await runSyncScript('sync-efbase.mjs', [
         '--maxPlayers',
         String(maxPlayers),
         '--trigger',
         nextSchedule.isPeak ? 'cron:peak' : 'cron:base'
       ]);
+
+      // eslint-disable-next-line no-console
+      console.log('[scrape-sync-cron] Starting packs synchronization...');
+      await runSyncScript('sync-efpacks.mjs', []);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error('[scrape-sync-cron] sync run failed', error);

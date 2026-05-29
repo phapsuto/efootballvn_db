@@ -304,6 +304,11 @@ async function main() {
         },
         skills: [], // We can populate if we want, but keeping it simple as eFootbase API represents them as s_ booleans
         playstyles,
+        boosterId: player.booster_id || 0,
+        booster: player.booster ? {
+          name: player.booster.name || '',
+          stats: player.booster.stats || {}
+        } : null,
         condition: {
           form: player.form === 2 ? 'A' : (player.form === 1 ? 'B' : 'C'),
           injuryResistance: player.injury_resistance ?? 2
