@@ -156,34 +156,52 @@ npm run import:data -- --uri "mongodb://127.0.0.1:27017/efootball_vn" --db "efoo
 - Import pipeline giờ đọc được cả JSON array lẫn object payload từ scraper và sinh `../scraped-output/status/import-report.json` với thống kê `new / updated / unchanged`.
 - Các script sync/import trong `next-app/scripts` sẽ tự đọc `.env.local` và `.env` trước khi chạy.
 
-## Pipeline scrape -> import (khuyến nghị)
+## Đồng bộ dữ liệu cầu thủ (High-Speed API Synchronizer)
 
-1. Tại thư mục gốc `eFootball`, chạy scrape JSON:
+Dự án tích hợp bộ đồng bộ hóa trực tiếp tốc độ cao từ eFootbase API, giúp tải thông số cầu thủ và ảnh chân dung sạch không nền (transparent PNG) tự động.
 
+### 1. Đồng bộ dữ liệu cầu thủ (Cào thủ công)
+
+* **Cào toàn bộ 100% dữ liệu (Mặc định quét liên tục hết API):**
+  ```bash
+  npm run sync:efbase
+  ```
+  *Cơ chế:* Tự động quét từ trang đầu tiên đến trang cuối cùng. Hệ thống có chế độ nghỉ ngẫu nhiên từ 1.5s - 3s giữa các trang để đảm bảo an toàn tuyệt đối.
+
+* **Cào siêu tốc (Chỉ lấy thẻ bài mới phát hành, bỏ qua thẻ đã có):**
+  ```bash
+  npm run sync:efbase -- --onlyNew true
+  ```
+  *Cơ chế:* Quét cực nhanh và chỉ thêm mới các cầu thủ chưa có trong MongoDB cục bộ, bỏ qua việc tải lại ảnh đối với cầu thủ đã tồn tại.
+
+* **Cào giới hạn số lượng trang hoặc số cầu thủ:**
+  ```bash
+  # Cào tối đa 5 trang
+  npm run sync:efbase -- --pages 5
+  # Cào tối đa 100 cầu thủ
+  npm run sync:efbase -- --maxPlayers 100
+  ```
+
+---
+
+### 2. Dịch vụ tự động quét thẻ mới hàng ngày (PM2 Scheduler)
+
+Tiến trình **`run-scrape-sync-cron.mjs`** sẽ tự động thức dậy cào thẻ mới hàng ngày đúng giờ quy định:
+* **Thời gian quét tự động:** Đúng **17:15 chiều hàng ngày (giờ Việt Nam)** (2 tiếng sau khi Konami hoàn tất cập nhật game).
+* **Quét thông minh:** Chỉ quét các trang đầu tiên trên API (nơi chứa thẻ mới), tự động thêm mới vào CSDL & tải ảnh chân dung nếu chưa có, và tự động bỏ qua nếu đã tồn tại ảnh.
+
+Để kích hoạt tiến trình chạy ngầm vĩnh viễn trên máy Mac của bạn bằng PM2:
 ```bash
-npm run scrape:once -- 40 --out ./scraped-output/players.json
+npx pm2 start scripts/run-scrape-sync-cron.mjs --name "efootball-sync-cron"
 ```
 
-2. Quay về `next-app`, import vào MongoDB:
+**Các lệnh tiện ích quản lý chạy ngầm:**
+* Kiểm tra danh sách & trạng thái: `npx pm2 status`
+* Xem nhật ký quét thời gian thực: `npx pm2 logs efootball-sync-cron`
+* Tạm dừng quét: `npx pm2 stop efootball-sync-cron`
+* Bật lại quét: `npx pm2 start efootball-sync-cron`
+* Xóa tiến trình: `npx pm2 delete efootball-sync-cron`
 
-```bash
-npm run import:data -- --uri "mongodb://127.0.0.1:27017/efootball_vn" --db "efootball_vn" --players "../scraped-output/players.json"
-```
-
-3. Hoặc chạy sync một lệnh ngay trong `next-app`:
-
-```bash
-npm run sync:once -- --maxPlayers 40
-```
-
-- `sync:once` sẽ gọi root scraper, ghi JSON ra `../scraped-output/players.latest.json`, import vào MongoDB và cập nhật:
-  - `../scraped-output/status/scrape-status.json`
-  - `../scraped-output/status/import-report.json`
-  - `../scraped-output/status/scrape-sync-status.json`
-- Nếu Mongo chưa chạy, `sync:once` vẫn scrape ra JSON nhưng bước import sẽ fail rõ ràng với `ECONNREFUSED 127.0.0.1:27017`, và trạng thái này xuất hiện trong `GET /api/health -> pipeline.sync.lastRun.error`.
-- `sync:cron` sẽ giữ scheduler chạy theo nhịp:
-  - cơ bản: mỗi giờ vào phút `12`
-  - cao điểm: thêm phút `42` tối thứ Hai và thứ Năm theo `Asia/Ho_Chi_Minh`
 
 ## Localization audit
 
