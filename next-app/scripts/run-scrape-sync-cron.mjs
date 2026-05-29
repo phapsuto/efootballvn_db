@@ -62,15 +62,11 @@ function getZonedParts(date, timeZone) {
 }
 
 function isPeakWindow(parts) {
-  const day = parts.weekday;
-  return (day === 'Mon' || day === 'Thu') && parts.hour >= 16 && parts.hour <= 23;
+  return parts.weekday === 'Thu';
 }
 
 function matchesSchedule(parts) {
-  if (parts.minute === 12) {
-    return true;
-  }
-  return parts.minute === 42 && isPeakWindow(parts);
+  return parts.hour === 17 && parts.minute === 15;
 }
 
 function getNextScheduledRun(fromDate = new Date()) {
@@ -82,7 +78,7 @@ function getNextScheduledRun(fromDate = new Date()) {
     if (matchesSchedule(parts)) {
       return {
         runAt: cursor,
-        isPeak: parts.minute === 42 && isPeakWindow(parts)
+        isPeak: isPeakWindow(parts)
       };
     }
     cursor = new Date(cursor.getTime() + 60_000);
@@ -132,7 +128,7 @@ function runSyncScript(args) {
   return new Promise((resolve, reject) => {
     const child = spawn(
       process.execPath,
-      [path.resolve(NEXT_APP_ROOT, 'scripts', 'run-scrape-sync.mjs'), ...args],
+      [path.resolve(NEXT_APP_ROOT, 'scripts', 'sync-efbase.mjs'), ...args],
       {
         cwd: NEXT_APP_ROOT,
         env: process.env,
@@ -146,7 +142,7 @@ function runSyncScript(args) {
         resolve();
         return;
       }
-      reject(new Error(`run-scrape-sync.mjs exited with code ${code}`));
+      reject(new Error(`sync-efbase.mjs exited with code ${code}`));
     });
   });
 }
@@ -169,7 +165,7 @@ async function loop() {
       running: true,
       timezone: TIMEZONE,
       mode: 'cron',
-      cadence: 'minute 12 hourly + minute 42 peak Mon/Thu evenings',
+      cadence: 'Daily at 17:15 (ICT) after eFootball updates',
       nextRunAt: nextSchedule.runAt.toISOString(),
       peakWindow: nextSchedule.isPeak,
       maxPlayers

@@ -9,6 +9,7 @@
     "lint": "node node_modules/next/dist/bin/next lint",
     "db:indexes": "node scripts/ensure-mongo-indexes.mjs",
     "import:data": "node scripts/import-scraped-data.mjs",
+    "sync:efbase": "node scripts/sync-efbase.mjs",
     "sync:once": "node scripts/run-scrape-sync.mjs",
     "sync:cron": "node scripts/run-scrape-sync-cron.mjs",
     "smoke:ui": "node scripts/smoke-ui.mjs",
